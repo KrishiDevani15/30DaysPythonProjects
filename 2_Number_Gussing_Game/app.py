@@ -27,5 +27,5 @@ def index():
 
     return render_template('index.html')
 
-if __name__ != '__main__':
-    application = app  # This exposes the app for Vercel
+if __name__ == '__main__':
+    app.run(debug=True) # This exposes the app for Vercel
